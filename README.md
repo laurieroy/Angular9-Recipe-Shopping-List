@@ -1,4 +1,13 @@
-# LauriesRecipes
+# Laurie's Recipes
+
+I'm building this to get more in-depth knowledge of Angular. It is based off of Maximilian Schwarzmüller's
+[Angular-the complete guide on Udemy](http://udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/13914134).
+
+This SPA is a collection of recipes. The user can browse the recipes and create a shopping list.
+
+    Features Used:
+        * TBD
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.12.
 
