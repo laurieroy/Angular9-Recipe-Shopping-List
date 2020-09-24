@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Recipe } from '../shared/models/recipe.model';
 
 @Component({
   selector: 'app-book',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./book.component.css']
 })
 export class BookComponent implements OnInit {
-
+  selectedRecipe: Recipe;
+  
   constructor() { }
 
   ngOnInit(): void {
