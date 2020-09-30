@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import { Directive, HostBinding, HostListener } from '@angular/core';
 
 @Directive({

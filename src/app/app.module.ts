@@ -14,22 +14,28 @@ import { RecipeListEditComponent } from './list/recipe-list/recipe-list-edit/rec
 import { ShoppingListComponent } from './list/shopping-list/shopping-list.component';
 import { ShoppingListEditComponent } from './list/shopping-list/shopping-list-edit/shopping-list-edit.component';
 import { ShoppingListService } from './list/shopping-list/shopping-list.service';
+import { AppRoutingModule } from './app-routing.module';
+import { RecipeLandingComponent } from './book/recipe-landing/recipe-landing.component';
+import { RecipeEditComponent } from './book/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     BookComponent,
-    RecipeDetailComponent,
-    RecipeItemComponent,
+    DropdownDirective,
     HeaderComponent,
+    HomeComponent,
+    RecipeDetailComponent,
+    RecipeEditComponent,
+    RecipeItemComponent,
+    RecipeLandingComponent,
+    RecipeListComponent,
+    RecipeListEditComponent,
     ShoppingListComponent,
     ShoppingListEditComponent,
-    RecipeListEditComponent,
-    RecipeListComponent,
-    DropdownDirective
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     FormsModule
   ],
