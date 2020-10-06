@@ -2,10 +2,10 @@ import { Ingredient } from './ingredient.model';
 
 export class Recipe {
     // id: number;
-    name: string;
-    description: string;
-    imagePath: string;
-    ingredients: Ingredient[];
+    public name: string;
+    public description: string;
+    public imagePath: string;
+    public ingredients: Ingredient[];
 
     constructor(name: string, desc: string, imagePath: string, ingredients: Ingredient[]) {
       this.name = name;
