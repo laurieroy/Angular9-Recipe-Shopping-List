@@ -6,12 +6,10 @@ export class User {
     private _tokenExpirationDate: Date
   ) {}
 
-  
-  public get token() : string {
+  public get token(): string {
     if (!this._tokenExpirationDate || new Date() > this._tokenExpirationDate) {
       return null;
     }
     return this._token;
   }
-  
 }
