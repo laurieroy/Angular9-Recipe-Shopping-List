@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthComponent } from './auth/auth.component';
 
 import { BookComponent } from './book/book.component';
 import { RecipeDetailComponent } from './book/recipe-detail/recipe-detail.component';
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
   {path: 'sList', component: ShoppingListComponent, children: [
     {path: ':id/edit', component: ShoppingListEditComponent}
   ] },
+  { path: 'auth', component: AuthComponent}
 ];
 
 @NgModule({
