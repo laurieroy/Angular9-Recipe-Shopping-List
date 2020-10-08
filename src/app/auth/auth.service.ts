@@ -75,7 +75,7 @@ export class AuthService {
   }
 
   autoLogin() {
-    const userData:{
+    const userData: {
       email: string,
       id: string,
       _token: string,

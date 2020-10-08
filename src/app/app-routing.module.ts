@@ -14,7 +14,7 @@ import { ShoppingListComponent } from './list/shopping-list/shopping-list.compon
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/recipes', pathMatch: 'full' },
-  {path: 'recipes', component: BookComponent, canActivate:[AuthGuard], children: [
+  {path: 'recipes', component: BookComponent, canActivate: [AuthGuard], children: [
     {path: '', component: RecipeLandingComponent},
     {path: 'new', component: RecipeEditComponent},
     {path: ':id', component: RecipeDetailComponent, resolve: [RecipesResolverService]},
