@@ -5,7 +5,7 @@ import { ShoppingListComponent } from '../shopping-list/shopping-list.component'
 
 
 const routes: Routes = [
-  {path: 'sList', component: ShoppingListComponent,
+  {path: '', component: ShoppingListComponent,
   children: [
     {path: ':id/edit', component: ShoppingListEditComponent}
   ]
