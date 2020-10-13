@@ -8,10 +8,7 @@ import { Ingredient } from 'src/app/shared/models/ingredient.model';
 export class ShoppingListService {
   ingredientsChanged = new Subject<Ingredient[]>();
   startedEditing = new Subject<number>();
-  // private ingredients: Ingredient[] = [
-  //   new Ingredient('Apples', 5),
-  //   new Ingredient('Tomatoes', 10)
-  // ];
+
   private ingredients: Ingredient[] = [];
 
   getIngredients() {
@@ -23,8 +20,11 @@ export class ShoppingListService {
   }
 
   onIngredientCreated(ingredient: Ingredient) {
+    console.log('in onIngredCreated');
     this.ingredients.push(ingredient);
+    console.log('pushed');
     this.ingredientsChanged.next(this.ingredients.slice());
+    console.log('sliced');
   }
 
   deleteIngredient(index: number) {
@@ -37,8 +37,8 @@ export class ShoppingListService {
     this.ingredientsChanged.next(this.ingredients.slice());
   }
 
-  addIngredients(igredients: Ingredient[]) {
-    this.ingredients.push(...this.ingredients);
+  addIngredients(ingredients: Ingredient[]) {
+    this.ingredients.push(...ingredients);
     this.ingredientsChanged.next(this.ingredients.slice());
   }
 }

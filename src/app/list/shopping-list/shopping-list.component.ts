@@ -26,7 +26,6 @@ export class ShoppingListComponent implements OnInit, OnDestroy {
           this.ingredients = ingredients;
         }
       );
-    // this.loggingService.printLog('Hello from Shopping list component ngonit!');
   }
 
   onEditIngredient(index: number){
